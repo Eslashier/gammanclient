@@ -11,14 +11,14 @@ const Proyectos = () => {
     const [nombre, setNombre] = useState(null);
 
     useEffect(() => {
-        const url = 'http://localhost:3001/proyectos';
+        const url = 'https://hidden-everglades-90155.herokuapp.com/proyectos';
         axios.get(url)
             .then(response => setDataProyectos(response.data))
     }, []);
 
     useEffect(() => {
         if (nombre !== null) {
-            const url = 'http://localhost:3001/proyectos';
+            const url = 'https://hidden-everglades-90155.herokuapp.com/proyectos';
             axios.post(url, { nombre: nombre })
                 .then(response => setDataProyectos(prev => [response.data.proyecto, ...prev]))
         }
@@ -26,7 +26,7 @@ const Proyectos = () => {
 
     const handleSearchIdDelete = (id) => {
         if (id) {
-            const url = `http://localhost:3001/proyectos/${id}`;
+            const url = `https://hidden-everglades-90155.herokuapp.com/proyectos/${id}`;
             axios.delete(url)
                 .then(response => {
                     setDataProyectos(dataProyectos.filter(response => response._id !== id))
