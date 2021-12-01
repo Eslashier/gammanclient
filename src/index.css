@@ -1,0 +1,32 @@
+@import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css';
+
+.proy {
+	padding-top: 12%;  /* Pixeles hacia arriba */
+	padding-bottom: 12%; /* Pixeles hacia abajo */
+	background-image: url('./assets/team.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+.proy_header { /* Bloque para el nombre */
+	color: #AD6EE5; /* Color de palabra A */
+	letter-spacing: 4px; /* Espaciado entre letras */
+}
+
+.lixon {
+	color: #A6E56E; /* Color palabra LIXON */
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.color-primary {
+  color: #AD6EE5;
+}
+
+.bg-color-primary {
+  background-color: #AD6EE5;
+}
