@@ -1,3 +1,4 @@
+import React from 'react'
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Proyectos from './pages/Proyectos';
 import Home from './pages/Home';
