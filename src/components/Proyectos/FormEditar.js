@@ -28,7 +28,7 @@ const FormEditar = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        const url = `http://localhost:3001/proyectos/${id}`;
+        const url = `https://hidden-everglades-90155.herokuapp.com/proyectos/${id}`;
         axios.put(url, { nombre: nombre })
             .then(response => console.log(response.data))
         setNombre('');
