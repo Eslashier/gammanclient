@@ -50,7 +50,7 @@ const Login = (props) => {
                                 <input type="password" className="form-control" required onChange={leerDatos} name="password" />
                             </div>
                             <button className="btn btn-success w-100">Submit</button>
-                            <p>Crear una Cuenta Nueva</p>
+                            <a href="http://ec2-3-15-46-165.us-east-2.compute.amazonaws.com:3000/registro" role="button"> Crear una cuenta </a>
                         </form>
                     </div>
                 </div>
