@@ -19,7 +19,7 @@ const Login = (props) => {
     const iniciarSesion = async (e) => {
         e.preventDefault();
         try {
-            const url = 'http://localhost:3001/iniciar-sesion';
+            const url = 'https://hidden-everglades-90155.herokuapp.com/iniciar-sesion';
             const respuesta = await axios.post(url, credenciales);
             const { token } = respuesta.data;
             localStorage.setItem('token', token);

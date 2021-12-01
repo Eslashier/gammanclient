@@ -14,7 +14,7 @@ const FormEditar = () => {
 
     useEffect(() => {
 
-        const url = `http://localhost:3001/proyectos/${id}`
+        const url = `https://hidden-everglades-90155.herokuapp.com/proyectos/${id}`
         const handledPutProyecto = () => {
             axios.get(url)
                 .then(response => setDataProyecto(response.data))

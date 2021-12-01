@@ -18,7 +18,7 @@ const Registro = (props) => {
     const iniciarSesion = async (e) => {
         e.preventDefault();
         try {
-            const url = 'http://localhost:3001/crear-cuenta';
+            const url = 'https://hidden-everglades-90155.herokuapp.com/crear-cuenta';
             const respuesta = await axios.post(url, credenciales);
             console.log(respuesta)
             props.history.push('/login')
